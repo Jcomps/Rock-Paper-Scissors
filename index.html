@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  
+    <link rel="icon" href="icons8-backspace-16.png" type="image/gif" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="scripts/scripts.js" defer></script>
+ 
+</head>
+
+<body class="preload">
+  <div class="container">
+    <header class="header">
+      <img src="assets/images/logo.svg" alt="logo" class="logo" />
+      <div class="score">
+        <div class="score__title">score</div>
+        <div class="score__userNumber">0</div>
+      </div>
+      <div class="score">
+        <div class="score__title">Comp</div>
+        <div class="score__aiNumber">0</div>
+      </div>
+    </header>
+    <section class="game">
+      <button class="choice-btn" data-choice="rock">
+        <div class="choice rock">
+          <img src="assets/images/icon-rock.svg" alt="Rock" />
+        </div>
+      </button>
+
+      <button class="choice-btn" data-choice="paper">
+        <div class="choice paper">
+          <img src="assets/images/icon-paper.svg" alt="Paper" />
+        </div>
+      </button>
+      <button class="choice-btn" data-choice="scissors">
+        <div class="choice scissors">
+          <img src="assets/images/icon-scissors.svg" alt="Scissors" />
+        </div>
+      </button>
+    </section>
+  </div>
+
+  <section class="results hidden">
+    <h2 class="results__heading">you picked</h2>
+    <h2 class="results__heading">the computer picked</h2>
+    <div class="results__result"></div>
+    <div class="results__winner hidden">
+      <h3 class="results__text"></h3>
+      <button class="play-again">play again</button>
+    </div>
+    <div class="results__result"></div>
+  </section>
+ 
+</body>
+
+</html>
